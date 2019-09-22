@@ -1,0 +1,33 @@
+body {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+header, nav, main, footer {
+    margin: 1.25rem auto;
+    max-width: 850px;
+}
+
+header, footer {
+    background-color: teal;
+    border-radius: 15px;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header img {
+    float: right;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+main h1 {
+    border-bottom: 2px solid black;
+}
+
+footer a {
+    color: black;
+    font-weight: bold;
+}

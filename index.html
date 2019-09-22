@@ -4,15 +4,48 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ramsey Harris CIT 230</title>
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
+    <header>
+        <h1>Ramsey Harris <img src="images/imageme.jpg" alt="Family Picture of Ramsey Harris"></h1>
+    </header>
+    <nav>
 
-    <h1>This is a Heading</h1>
-    <p>This is a paragraph.</p>
+    </nav>
+    <main>
 
+        <h1>CIT 230: Assignment Portal</h1>
+        <ul>
+            <li>
+                Lesson 02: <a
+                    href="https://byui.instructure.com/courses/65934/pages/w02-responsive-web-design?module_item_id=6401210">Assignment
+                    Link</a>
+            </li>
+            <li>
+                Lesson 03: <a href="https://byui.instructure.com/courses/65934/modules">Assignment Link</a>
+            </li>
+            <li>
+                Lesson 04: <a href="https://byui.edu">Link</a> | <a href="https://byui.edu">Link</a>
+            </li>
+        </ul>
+
+    </main>
+    <footer>
+        &copy; Ramsey Harris | Utah | <a href="https://www.byui.edu/online">BYUI Online Learning</a> <span
+            id="activedate"></span>
+        <br>
+        <h5>Last Modified <span id="modifiedat"></span></h5>
+
+    </footer>
+    <script src="js/currentdate.js">
+    </script>
+    <script>
+        var x = document.lastModified;
+        document.getElementById("modifiedat").innerHTML = x;
+    </script>
 </body>
 
 </html>
