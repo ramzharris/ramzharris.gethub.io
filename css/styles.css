@@ -16,12 +16,16 @@ header, footer {
     padding: 1.5rem;
 }
 
+header {
+    font-family: 'Playfair Display', serif;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
 header img {
     float: right;
     margin: 10px;
     border: 1px solid black;
     border-radius: 10px;
-    font-family: 'Playfair Display', serif;
 }
 
 main h1 {
