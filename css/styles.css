@@ -19,7 +19,7 @@ header, footer {
 
 body header h1 {
     font-family: 'Playfair Display', serif;
-    text-shadow: 4px 4px 4px #aaa;
+    text-shadow: 4px 4px 4px rgb(83, 83, 83);
 }
 
 header img {
