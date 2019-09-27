@@ -1,6 +1,7 @@
 body {
     font-size: 18px;
     line-height: 1.5;
+    font-family: 'Courgette', cursive;
 }
 
 header, nav, main, footer {
