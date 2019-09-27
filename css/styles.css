@@ -16,7 +16,7 @@ header, footer {
     padding: 1.5rem;
 }
 
-header h1 {
+body header h1 {
     font-family: 'Playfair Display', serif;
     text-shadow: 4px 4px 4px #aaa;
 }
