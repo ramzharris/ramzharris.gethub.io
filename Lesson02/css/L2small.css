@@ -3,17 +3,47 @@
 body {
     font-size: 18px;
     line-height: 1.5;
-    font-family: 'Courgette', cursive;
+    font-family: 'Playfair Display', serif;
     height: 100%;
+}
+
+header {
+    margin: 0 auto;
+    padding: 0.5rem;
+    max-width: 950px;
+    align-content: center;
+    background-color: rgba(0, 128, 128, 0.644);
+    text-align: center;
+    font-family: 'Courgette', cursive;
 }
 
 
 
 /* Small or baseline view *******/
 main {
+    max-width: 767px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
+}
+
+
+
+main img {
+    max-width: 350px;
+    box-shadow: 0 0 10px #bbb;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+main section {
+    margin: 1rem;
+    border: 1px solid #000;
+    border-radius: 15px;
+    padding: .75rem;
+    background-color: rgb(206, 236, 245);
 }
 
 
@@ -23,12 +53,17 @@ main {
 /* Medium view  *********/
 @media only screen and (min-width: 37.5em) {
     main {
-        grid-template: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header {
+        border-radius: 15px;
     }
 
     section:nth-child(3) {
         grid-column: span 2;
     }
+
 }
 
 
@@ -36,8 +71,11 @@ main {
 @media only screen and (min-width: 60em) {
     main {
         grid-template-columns: 1fr 1fr 1fr;
+        max-width: 850rem;
     }
+
     section:nth-child(3) {
         grid-column: span 1;
     }
+
 }
