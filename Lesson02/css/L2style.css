@@ -17,6 +17,19 @@ header {
     font-family: 'Courgette', cursive;
 }
 
+nav {
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+footer {
+    margin: 0 auto;
+    padding: 0.25rem;
+    max-width: 100%;
+    background-color:  rgba(0, 128, 128, 0.644);
+    text-align: center;
+}
+
 
 
 /* Small or baseline view *******/
@@ -26,25 +39,19 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     font-size: 1.2rem;
-}
-
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    position: relative;
+    text-align: justify;
 }
 
 
 main img {
     max-width: 100%;
     height: auto;
-    box-shadow: 0 0 10px #bbb;
+    box-shadow: 0 0 10px rgb(255, 69, 69);
     margin-left: auto;
     margin-right: auto;
     display: block; 
-    align-items: baseline;
+    
 }
 
 
