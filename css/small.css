@@ -1,11 +1,33 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-size: 14px;
-    line-height: 1.25;
+    font-size: 18px;
+    line-height: 1.5;
     font-family: 'Courgette', cursive;
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    text-shadow: 4px 4px 4px rgb(83, 83, 83);
+    margin: 0.15rem;
+}
+
+.subheading {
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;    
 }
 
 header, nav, main, footer {
-    margin: 1.25rem auto;
+    margin: 0 auto;
+    padding: 0.75rem;
     max-width: 850px;
 }
 
@@ -14,11 +36,6 @@ header, footer {
     color: #fff;
     text-align: center;
     padding: 1.5rem;
-}
-
-body header h1 {
-    font-family: 'Playfair Display', serif;
-    text-shadow: 4px 4px 4px rgb(83, 83, 83);
 }
 
 header img {
