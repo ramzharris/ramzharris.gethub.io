@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+body {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Courgette', cursive;
+    height: 100%;
+}
+
+
+
+/* Small or baseline view *******/
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+/* Medium view  *********/
+@media only screen and (min-width: 37.5em) {
+    main {
+        grid-template: 1fr 1fr;
+    }
+
+    section:nth-child(3) {
+        grid-column: span 2;
+    }
+}
+
+
+/* Large view ********/
+@media only screen and (min-width: 60em) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
