@@ -15,14 +15,13 @@ body {
 h1 {
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
-    text-shadow: 4px 4px 4px rgb(83, 83, 83);
+    text-shadow: 4px 4px 4px #000;
     margin: 0.15rem;
+    color: rgba(74, 106, 136, 0.76);
 }
 
-.subheading {
-    font-size: 1.5rem;
+header h1 {
     color: #fff;
-    text-shadow: 2px 2px 5px #000;    
 }
 
 header, nav, main, footer {
@@ -39,15 +38,14 @@ header, footer {
 }
 
 header img {
-    float: right;
     margin: 10px;
     border: 1px solid black;
-    border-radius: 10px;
 }
 
 main h1 {
     border-bottom: 2px solid black;
     font-family: 'Playfair Display', serif;
+    text-shadow: 2px 2px 3px #000;
 }
 
 footer a {
