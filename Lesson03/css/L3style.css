@@ -7,7 +7,7 @@ body {
     height: 100%;
 }
 /* Small / Baseline view */
-header {
+header, footer {
     margin: 0 auto;
     padding: 0.15rem;
     max-width: 1050px;
