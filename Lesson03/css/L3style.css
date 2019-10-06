@@ -15,9 +15,9 @@ header, footer {
     text-align: center;
     font-family: 'Segoe UI';
 }
-header div {
-    display: none;
-    margin: 0.5rem;
+img {
+    width: 15%;
+    height: auto;
 }
 nav {
     background-color: rgb(9, 9, 105);
@@ -57,11 +57,6 @@ nav a:hover {
     nav a {
         font-size: 1rem;
     }
-    img {
-        width: 15%;
-        height: auto;
-    }
-
 }
 
 
