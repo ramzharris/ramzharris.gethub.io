@@ -8,4 +8,33 @@
     main {
         font-size: 1rem;
     }
+
+    .contact img {
+        width: 450px;
+    }
+
+    /*.herocontainer {
+        margin: 10px auto;
+        position: relative;
+        width: 940px;
+        height: 300px;
+    }
+
+    .heroimg {
+        margin: 10px auto;
+        border: 1px solid #333;
+        width: 100%;
+        height: 250px;
+    }
+
+    .weathersummary {
+        position: absolute;
+        top: 20px;
+        left: 40px;
+        background: radial-gradient(blue, lightblue);
+        border: 1px solid blue;
+        padding: .5rem;
+        box-shadow: 0 0 30px #777;
+    } */
+
 }

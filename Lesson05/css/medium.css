@@ -1,5 +1,5 @@
 /* Style for medium - tablet view */
-@media only screen and (min-width: 655px) {
+@media only screen and (min-width: 32.5em) {
     .navigation {
         display: flex;
     }
@@ -17,9 +17,28 @@
         border: none;
    }
 
-    /*.navigation li a {
-        color: 
-    }*/
+   .artimg {
+       float: right;
+       width: 350px;
+       height: auto;
+   }
+
+   .forecast {
+    display: block;
+    text-align: center;
+}
+
+   .fiveday {
+       text-align: left;
+       margin: 0 auto;
+   }
+
+   .contact img {
+       display: block;
+       width: 400px;
+       height: auto;
+       margin: 0 auto;
+   }
 }
 
 

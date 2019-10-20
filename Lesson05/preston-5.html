@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="css/large.css">
 </head>
 <body>
+<div class="banner" id="hideornot">
+    <h2>Saturday = Preston Pancakes in the Park!</h2>
+    <h3>9:00 a.m. Saturdays at the city park pavillion.</h3>
+</div>
 <header>
 
             <img src="images/NewSoggyPotatoLogo.png" alt="Soggy Potato Logo">
@@ -29,6 +33,7 @@
     <ul class="navigation">
         <li><a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
         <li><a href="#">Home</a></li>
+        <li class="active"><a href="#">Preston</a></li>
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
         <li><a href="#">Storm Center</a></li>
@@ -37,17 +42,72 @@
 </nav>
 <main>
     <h2>Preston, Idaho</h2>
-    <section class="hero">
-        <h3>Hero w/ weather summary</h3>
-    </section>
+    <div class="herocontainer">
+        <img class="heroimg" src="images/Clouds.JPG" alt="Image of Clouds">
+        <section class="weathersummary">
+            <h3>Weather Summary for Today</h3>
+            <p>Temperature: 65</p>
+            <p>Humidity: 20%</p>
+            <p>Wind Speed: 5mph</p>
+        </section>
+    </div>
     <section  class="forecast">
         <h3>5 Day Forecast</h3>
+        <table class="fiveday">
+            <tr>
+                <th class="dayone">Monday</th>
+                <th class="daytwo">Tuesday</th>
+                <th class="daythree">Wednesday</th>
+                <th class="dayfour">Thursday</th>
+                <th class="dayfive">Friday</th>
+            </tr>
+            <tr>
+                <td>High</td>
+                <td>High</td>
+                <td>High</td>
+                <td>High</td>
+                <td>High</td>
+            </tr>
+            <tr>
+                <td>Low</td>
+                <td>Low</td>
+                <td>Low</td>
+                <td>Low</td>
+                <td>Low</td>
+            </tr>
+        </table>
+        <!--<section class="fiveday">
+            <p class="dayone">Monday</p>
+            <p class="daytwo">Tuesday</p>
+            <p class="daythree">Wednesday</p>
+            <p class="dayfour">Thursday</p>
+            <p class="dayfive">Friday</p>
+        </section>
+        -->
     </section>
     <section class="article">
-        <h3>Article</h3>
+        <h3>Best Posing Fur Award</h3>
+        <img class="artimg" src="images/Squirrel.jpg" alt="Image of Squirrel">
+        <p>In our quarterly contest, we give our winner to a resident squirrel of
+            Utah's Zion National Park. He does not have an official name, so we
+            have been calling him Theo. He was not afraid to run through crowds
+            that were passing, and was definitely not camera shy.
+        </p>
+        <p>The wonderful photographer of this image is our very own, Ramsey Harris.
+            When coming across the little furball, Ramsey quickly acted by whipping
+            out his phone and snapping a bunch of pictures. He submitted this photo
+            and everyone in the office fell in love with the little guy.
+        </p>
+        <p>We are still accepting photos for the last quarter of the year. Please
+            submit them with your contact info if you would like the chance to
+            have your photos posted on one of our pages.
+        </p>
     </section>
     <section class="contact">
         <h3>Contact Information</h3>
+        <img src="images/MapOfPreston.JPG" alt="Map of Preston">
+        <a>&#9742;800-123-5555</a>
+        <a>&#128231;contactus@thesoggypotato.com</a>
     </section>
 </main>
 <footer>
@@ -57,6 +117,7 @@
     <br>
 
 </footer>
+<script src="js/toggleBanner.js"></script>
 <script src="js/todaysDate.js"></script>
 <script src="js/toggleMenu.js"></script>
 </body>

@@ -1,4 +1,4 @@
-var today = new Date()
+var today = new Date();
 // Array to assign days of week to the weekday
 var weekday = new Array(7);
 weekday[0] = "Sunday";
