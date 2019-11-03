@@ -26,7 +26,7 @@ main picture img {
 }
 
 .picgrid p {
-    display: none;
+    display: none; 
 }
 
 @media only screen and (min-width: 887px) {
