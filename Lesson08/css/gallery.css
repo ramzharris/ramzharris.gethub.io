@@ -1,0 +1,41 @@
+/* Responsive Grid Layout for Gallery */
+.picgrid {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 1rem;
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    justify-content: center;
+    gap: 15px;
+}
+
+.picgrid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+main picture img[data-src] {
+    filter: blur(0.1em);
+}
+
+main picture img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
+.picgrid p {
+    display: none; 
+}
+
+@media only screen and (min-width: 887px) {
+    .picgrid picture:hover {
+        box-shadow: 0 0 60px rgb(52, 64, 226);
+    }
+
+    .picgrid p {
+        display: block;
+        margin: auto 0;
+    }
+}

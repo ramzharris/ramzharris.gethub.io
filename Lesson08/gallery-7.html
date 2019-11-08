@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Gallery</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+<header>
+    <img src="images/NewSoggyPotatoLogo.png" alt="Soggy Potato Logo">
+    <section class="headings">
+        <h1>
+            The Soggy Potato
+        </h1>
+        <div class="moto">We Face the Storms so You don't Have to!</div>
+    </section>
+</header>
+ 
+<nav>
+    <ul class="navigation">
+        <li><a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="preston-7.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li class="active"><a href="#">Gallery</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section class="picgrid">
+        <picture>
+            <a href="images/gallery/darkclouds.jpeg" target="_blank">
+            <img src="images/gallery/imageloading.jpg" data-src="images/gallery/darkclouds.jpeg" alt="Dark Clouds Image">
+            </a>
+            <p>Dark Clouds Overhead</p>
+        </picture>
+        <picture>
+            <a href="images/gallery/drearysky.jpeg" target="_blank">
+            <img src="images/gallery/imageloading.jpg" data-src="images/gallery/drearysky.jpeg" alt="Dreary Sky Image">
+            </a>
+            <p>Dreary Sky Coverying Fall Colors</p>
+        </picture>
+        <picture>
+            <a href="images/gallery/lightningatnight.jpeg" target="_blank">
+            <img src="images/gallery/imageloading.jpg" data-src="images/gallery/lightningatnight.jpeg" alt="Nighttime Lightning Image">
+            </a>
+            <p>Lightning Strike at Nighttime</p>  
+        </picture>
+        <picture>
+            <a href="images/gallery/lightningovertown.jpeg" target="_blank">
+            <img src="images/gallery/imageloading.jpg" data-src="images/gallery/lightningovertown.jpeg" alt="Lightning Above a Town Image">
+            </a>
+            <p>Lightning Strike Over a Town</p>
+        </picture>
+        <picture>
+            <a href="images/gallery/rainontrafficlights.jpeg" target="_blank">
+            <img src="images/gallery/imageloading.jpg" data-src="images/gallery/rainontrafficlights.jpeg" alt="Traffic Lights in the Rain Image">
+            </a>
+            <p>Rain Falling Over Traffic Lights</p>
+        </picture>
+        <picture>
+            <a href="images/gallery/rainyroad.jpeg" target="_blank">
+            <img src="images/gallery/imageloading.jpg" data-src="images/gallery/rainyroad.jpeg" alt="Road in the Rain Image">
+            </a>
+            <p>Wet Road after Heavy Rain</p>
+        </picture>
+        <picture>
+            <a href="images/gallery/snowtrail.jpeg" target="_blank">
+            <img src="images/gallery/imageloading.jpg" data-src="images/gallery/snowtrail.jpeg" alt="Trail in the Snow Image">
+            </a>
+            <p>Snow Covered Trail</p>
+        </picture>
+        <picture>
+            <a href="images/gallery/snowyroad.jpeg" target="_blank">
+            <img src="images/gallery/imageloading.jpg" data-src="images/gallery/snowyroad.jpeg" alt="Snow on a Road Image">
+            </a>
+            <p>Side Road Covered in Snowfall</p>
+        </picture>
+        <picture>
+            <a href="images/gallery/tornado.jpeg" target="_blank">
+            <img src="images/gallery/imageloading.jpg" data-src="images/gallery/tornado.jpeg" alt="Tornado Image">
+            </a>
+            <p>Tornado in the Distance</p>
+        </picture>
+    </section>
+</main>
+
+<footer>
+        &copy; <span id="todaysYear"></span> Ramsey Harris | Utah | 
+        <a href="https://www.byui.edu/online">BYUI Online Learning</a> <span
+        id="todaysDate"></span>
+    <br>
+</footer>
+<script src="js/lazyload.js"></script>
+<script src="js/todaysDate.js"></script>
+<script src="js/toggleMenu.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src="js/webFontLoader.js"></script>
+</body>
+
+</html>
