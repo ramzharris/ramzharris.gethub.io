@@ -16,26 +16,21 @@
     object-fit: cover;
 }
 
-main picture img[data-src] {
+.picgrid figure {
+    margin: 0 auto;
+}
+
+main figure img[data-src] {
     filter: blur(0.1em);
 }
 
-main picture img {
+main figure img {
     filter: blur(0em);
     transition: filter 0.5s;
 }
 
-.picgrid p {
-    display: none; 
-}
-
 @media only screen and (min-width: 887px) {
-    .picgrid picture:hover {
+    .picgrid figure:hover {
         box-shadow: 0 0 60px rgb(52, 64, 226);
-    }
-
-    .picgrid p {
-        display: block;
-        margin: auto 0;
     }
 }
