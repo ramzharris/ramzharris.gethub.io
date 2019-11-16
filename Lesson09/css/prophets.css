@@ -24,6 +24,7 @@ h2 {
 }
 
 div {
+    width: auto;
     background-color: rgb(221, 221, 221);
     padding: 20px;
     box-shadow: 0px 0px 10px 10px rgba(53, 53, 53, 0.459);
@@ -33,12 +34,13 @@ section {
     margin: 5px;
     background-color: rgb(185, 185, 204);
     border: 1px solid blue;
-    width: 400px;
+    max-width: 400px;
 }
 
 p {
     text-align: center;
     margin: auto 0;
+    white-space: nowrap;
 }
 
 img {
