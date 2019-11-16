@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Gallery</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+<header>
+    <img src="images/NewSoggyPotatoLogo.png" alt="Soggy Potato Logo">
+    <section class="headings">
+        <h1>
+            The Soggy Potato
+        </h1>
+        <div class="moto">We Face the Storms so You don't Have to!</div>
+    </section>
+</header>
+ 
+<nav>
+    <ul class="navigation">
+        <li><a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="preston-7.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li class="active"><a href="#">Gallery</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section class="picgrid">
+        <figure>
+            <img src="images/gallery/imageloading.jpg" data-src="images/gallery/darkclouds.jpeg" alt="Dark Clouds Image">
+            <figcaption>Dark Clouds Overhead</figcaption>
+        </figure>
+        <figure>
+            <img src="images/gallery/imageloading.jpg" data-src="images/gallery/drearysky.jpeg" alt="Dreary Sky Image">
+            <figcaption>Dreary Sky Coverying Fall Colors</figcaption>
+        </figure>
+        <figure>
+            <img src="images/gallery/imageloading.jpg" data-src="images/gallery/lightningatnight.jpeg" alt="Nighttime Lightning Image">
+            <figcaption>Lightning Strike at Nighttime</figcaption>  
+        </figure>
+        <figure>
+            <img src="images/gallery/imageloading.jpg" data-src="images/gallery/lightningovertown.jpeg" alt="Lightning Above a Town Image">
+            <figcaption>Lightning Strike Over a Town</figcaption>
+        </figure>
+        <figure>
+            <img src="images/gallery/imageloading.jpg" data-src="images/gallery/rainontrafficlights.jpeg" alt="Traffic Lights in the Rain Image">
+            <figcaption>Rain Falling Over Traffic Lights</figcaption>
+        </figure>
+        <figure>
+            <img src="images/gallery/imageloading.jpg" data-src="images/gallery/rainyroad.jpeg" alt="Road in the Rain Image">
+            <figcaption>Wet Road after Heavy Rain</figcaption>
+        </figure>
+        <figure>
+            <img src="images/gallery/imageloading.jpg" data-src="images/gallery/snowtrail.jpeg" alt="Trail in the Snow Image">
+            <figcaption>Snow Covered Trail</figcaption>
+        </figure>
+        <figure>
+            <img src="images/gallery/imageloading.jpg" data-src="images/gallery/snowyroad.jpeg" alt="Snow on a Road Image">
+            <figcaption>Side Road Covered in Snowfall</figcaption>
+        </figure>
+        <figure>
+            <img src="images/gallery/imageloading.jpg" data-src="images/gallery/tornado.jpeg" alt="Tornado Image">
+            </a>
+            <figcaption>Tornado in the Distance</figcaption>
+        </figure>
+    </section>
+</main>
+
+<footer>
+        &copy; <span id="todaysYear"></span> Ramsey Harris | Utah | 
+        <a href="https://www.byui.edu/online">BYUI Online Learning</a> <span
+        id="todaysDate"></span>
+    <br>
+</footer>
+<script src="js/lazyload.js"></script>
+<script src="js/todaysDate.js"></script>
+<script src="js/toggleMenu.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src="js/webFontLoader.js"></script>
+</body>
+
+</html>

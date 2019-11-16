@@ -1,0 +1,52 @@
+/* Style for medium - tablet view */
+@media only screen and (min-width: 32.5em) {
+    .navigation {
+        display: flex;
+    }
+
+    .navigation a {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .navigation li:first-child{
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    nav ul li a {
+        border: none;
+   }
+
+   .artimg {
+       float: right;
+       width: 350px;
+       height: auto;
+   }
+
+   .forecast {
+    display: block;
+    text-align: center;
+}
+
+   .fiveday {
+       text-align: left;
+       margin: 0 auto;
+   }
+
+   .contact img {
+       display: block;
+       width: 400px;
+       height: auto;
+       margin: 0 auto;
+   }
+}
+
+
+
+
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Storm Center</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/stormcenter.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+<header>
+    <img src="images/NewSoggyPotatoLogo.png" alt="Soggy Potato Logo">
+    <section class="headings">
+        <h1>
+            The Soggy Potato
+        </h1>
+        <div class="moto">We Face the Storms so You don't Have to!</div>
+    </section>
+</header>
+ 
+<nav>
+    <ul class="navigation">
+        <li><a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="preston-7.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li class="active"><a href="#">Storm Center</a></li>
+        <li><a href="gallery-7.html">Gallery</a></li>
+    </ul>
+</nav>
+
+<main>
+    <form action="#">
+        Full Name: <input type="text" name="fullname" minlength="5" required><br>
+        Email: <input type="text" type="email" placeholder="example@gmail.com"><br>
+        Phone Number: <input type="text" type="tel" required><br>
+        Zip Code: <input type="text" type="number" required><br>
+        Storm Date: <input type="text" type="date"><br>
+        Storm Type: <input list="stormtype" placeholder="Select One">
+                    <datalist id="stormtype">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist><br>
+        Storm Severity: <input type="range" id="severity" value="5" min="1" max="10" step="1" list="ticks" onclick="adjustRating(this.value)">
+                        <datalist id="ticks"><span id="ratings">10</span>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                            <option value="5"></option>
+                            <option value="6"></option>
+                            <option value="7"></option>
+                            <option value="8"></option>
+                            <option value="9"></option>
+                            <option value="10"></option>
+                        </datalist><br>
+        Storm Region: <select id="region">
+                          <option value="Select Region" selected disabled>Select Region</option>
+                          <option value="Preston">Preston</option>
+                          <option value="Soda Springs">Soda Springs</option>
+                          <option value="Fish Haven">Fish haven</option>
+                      </select><br>
+        User in Danger: <input type="radio" value="Yes">Yes
+                        <input type="radio" value="Maybe">Maybe
+                        <input type="radio" value="No">No <br><br>
+        <div id="comments">Adittional Comments:</div>
+        <textarea rows="6" cols="50"></textarea><br>
+                      <input type="submit">
+    </form>
+</main>
+
+<footer>
+    &copy; <span id="todaysYear"></span> Ramsey Harris | Utah | 
+    <a href="https://www.byui.edu/online">BYUI Online Learning</a> <span
+    id="todaysDate"></span>
+<br>
+</footer>
+<script src="js/adjustRating.js"></script>
+<script src="js/lazyload.js"></script>
+<script src="js/todaysDate.js"></script>
+<script src="js/toggleMenu.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src="js/webFontLoader.js"></script>
+</body>
+
+</html>
