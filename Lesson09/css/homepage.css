@@ -1,0 +1,61 @@
+.townInfo section {
+    max-width: 100%;
+}
+
+.townInfo section img {
+    max-width: 90%;
+}
+
+.motto {
+    font-style: italic;
+    padding-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.townInfo h2 {
+    margin-bottom: 0px;    
+}
+
+.townInfo a {
+    text-decoration: none;
+}
+
+.townInfo p {
+    margin: auto 0;
+    font-family: 'Playfair';
+}
+
+.wireframes {
+    font-size: 1.5rem;
+    padding: 10px;
+    background-color: rgb(9, 9, 105);
+    display: grid;
+}
+
+.wireframes a {
+    color: white;
+    padding: 5px 5px 0px 5px;
+}
+
+@media only screen and (min-width: 32.5em) {
+    .townInfo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .wireframes {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 65em) {
+
+.townInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+}
