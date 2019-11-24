@@ -1,4 +1,4 @@
-const forecastURL = 'http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=a7d6c26556a1ef569698470329b2444f';
+const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=a7d6c26556a1ef569698470329b2444f';
 
 fetch(forecastURL)
     .then((response) => response.json())
@@ -9,7 +9,7 @@ fetch(forecastURL)
                 j++;
             }
             //for (let j = 1; j <= 5; j++) {
-            var img = "http://openweathermap.org/img/wn/"
+            var img = "https://openweathermap.org/img/wn/"
             var day = jsObject.list[i].dt_txt;
             var date = new Date(day);
             var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
