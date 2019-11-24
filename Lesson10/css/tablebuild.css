@@ -1,0 +1,51 @@
+body {
+    font-family: Ubuntu, sans-serif;
+}
+
+table {
+    box-shadow: 7px 7px 7px #628ca6;
+}
+
+table, th, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    padding: .5rem;
+}
+
+table thead, tfoot {
+    background-color: #7fb9c2;
+    font-family: "Ubuntu", sans-serif;
+}
+
+thead {
+    font-size: 1.5em;
+    font: bold;
+}
+
+tbody th {
+    background-color: #628ca6;
+    color: #fff;
+}
+
+tbody tr {
+    background-color: #e7ffed;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e7f0ed;
+}
+
+tbody tr:nth-child(5) td:nth-child(3) {
+    background-color: #628ca6;
+    color: #fff;
+}
+
+.blackfriday {
+    font-style: italic;
+}
+
+tfoot {
+    font-size: .75em;
+    font: 200;
+}
