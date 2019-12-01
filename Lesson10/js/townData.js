@@ -5,10 +5,10 @@ fetch(requestURL)
         return response.json();
     })
     .then(function (jsonObject) {
-        //console.table(jsonObject); // temporary checking for valid response and towns parsing
+        console.table(jsonObject); // temporary checking for valid response and towns parsing
         const towns = jsonObject['towns'];
         for (let i = 0; i < towns.length; i++) {
-            if (i == 1 || i == 4 || i == 5) {
+            if (towns[i].name == "Preston" || towns[i].name == "Soda Springs" || towns[i].name == "Fish Haven") {
                 let card = document.createElement('section');
                 let h2 = document.createElement('h2');
                 let p1 = document.createElement('p');
@@ -25,17 +25,17 @@ fetch(requestURL)
                 p3.textContent = "Population: " + towns[i].currentPopulation;
                 p4.textContent = "Average Rain Fall: " + towns[i].averageRainfall;
                 if (i == 1) {
-                    image.setAttribute('src', "images/towns/farmhouse.jpeg");
-                    image.setAttribute('alt', "Picture of a Farm House");
+                    image.setAttribute('src', towns[i].photo);
+                    image.setAttribute('alt', towns[i].name);
                     a.appendChild(h2);
                 } else if (i == 4) {
                     image.setAttribute('src', "images/towns/woodenbarn.jpeg");
-                    image.setAttribute('alt', "Picture of a Barn");
-                    a.setAttribute('href', "preston-10.html");
+                    image.setAttribute('alt', towns[i].name);
+                    a.setAttribute('href', "preston.html");
                     a.appendChild(h2);
                 } else {
                     image.setAttribute('src', "images/towns/woodenstructure.jpeg");
-                    image.setAttribute('alt', "Picture of a Wooden Structure");
+                    image.setAttribute('alt', towns[i].name);
                     a.appendChild(h2);
                 }
                 

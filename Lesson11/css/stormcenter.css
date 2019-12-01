@@ -1,0 +1,10 @@
+/* Styling for Storm Center page */
+
+form {
+    width: 650px;
+    text-align: right;
+}
+
+.ratings {
+    margin: 0 15px;
+}
