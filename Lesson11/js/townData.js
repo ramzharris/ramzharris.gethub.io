@@ -8,8 +8,9 @@ fetch(requestURL)
         //console.table(jsonObject); // temporary checking for valid response and towns parsing
         const towns = jsonObject['towns'];
         for (let i = 0; i < towns.length; i++) {
-            if (i == 1 || i == 4 || i == 5) {
+            if (towns[i].name == "Preston" || towns[i].name == "Soda Springs" || towns[i].name == "Fish Haven") {
                 let card = document.createElement('section');
+                let txtCard = document.createElement('article');
                 let h2 = document.createElement('h2');
                 let p1 = document.createElement('p');
                 let p2 = document.createElement('p');
@@ -24,22 +25,18 @@ fetch(requestURL)
                 p2.textContent = "Year Founded: " + towns[i].yearFounded;
                 p3.textContent = "Population: " + towns[i].currentPopulation;
                 p4.textContent = "Average Rain Fall: " + towns[i].averageRainfall;
-                if (i == 1) {
-                    image.setAttribute('src', towns[i].photo);
-                    image.setAttribute('alt', towns[i].name);
-                    a.appendChild(h2);
-                } else if (i == 4) {
-                    image.setAttribute('src', towns[i].photo);
-                    image.setAttribute('alt', towns[i].name);
-                    a.setAttribute('href', "preston-10.html");
-                    a.appendChild(h2);
-                } else {
-                    image.setAttribute('src', towns[i].photo);
-                    image.setAttribute('alt', towns[i].name);
-                    a.appendChild(h2);
-                }
-                
-                card.append(a, p1, p2, p3, p4, image);
+
+                image.setAttribute('src', "images/towns/" + towns[i].photo);
+                image.setAttribute('alt', towns[i].name);
+                a.appendChild(h2);
+
+                txtCard.appendChild(a);
+                txtCard.appendChild(p1);
+                txtCard.appendChild(p2);
+                txtCard.appendChild(p3);
+                txtCard.appendChild(p4);
+                card.appendChild(txtCard);
+                card.appendChild(image);
 
                 document.querySelector('div.townInfo').appendChild(card);
             }

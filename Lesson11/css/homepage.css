@@ -1,5 +1,7 @@
 .townInfo section {
     max-width: 100%;
+    background-color: rgba(9, 9, 9, .15);
+    ;
 }
 
 .townInfo section img {
@@ -13,7 +15,7 @@
 }
 
 .townInfo h2 {
-    margin-bottom: 0px;    
+    margin-bottom: 0px;
 }
 
 .townInfo a {
@@ -26,27 +28,43 @@
     font-family: 'Playfair';
 }
 
-.wireframes {
-    font-size: 1.5rem;
-    padding: 10px;
-    background-color: rgb(9, 9, 105);
-    display: grid;
+.contest h2 {
+    background-color: rgba(9, 9, 9, 0);
 }
 
-.wireframes a {
-    color: white;
-    padding: 5px 5px 0px 5px;
+.contest section {
+    max-width: 85%;
 }
 
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 32.5em) and (max-width: 64.9em) {
+
     .townInfo {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
-    .wireframes {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+    .townInfo h2 {
+        background-color: rgba(9, 9, 9, 0);
+    }
+
+    .townInfo section {
+        margin: auto 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .townInfo section:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .townInfo article {
+        margin: 0 10% 0 10%;
+    }
+
+    .townInfo img {
+        width: 250px;
+        margin: auto 0;
     }
 }
 
@@ -55,6 +73,11 @@
 .townInfo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.townInfo img {
+    width: 90%;
 }
 
 

@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Preston Idaho</title>
+    <title>Fish Haven Idaho</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
     <link rel="shortcut icon" href="favicon.ico">
@@ -16,10 +16,10 @@
 </head>
 
 <body>
-    <div class="banner" id="hideornot">
-        <h2>Saturday = Preston Pancakes in the Park!</h2>
-        <h3>9:00 a.m. Saturdays at the city park pavillion.</h3>
-    </div>
+    <!--<div class="banner" id="hideornot">
+        <h2></h2>
+        <h3></h3>
+    </div>-->
     <header>
 
         <img src="images/NewSoggyPotatoLogo.png" alt="Soggy Potato Logo">
@@ -35,20 +35,20 @@
         <ul class="navigation">
             <li><a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
             <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="#">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li class="active"><a href="#">Fish Haven</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
-            <li><a href="gallery-7.html">Gallery</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
     <main>
-        <h2>Preston, Idaho</h2>
+        <h2><span id="town">Fish Haven</span>, Idaho</h2>
         <div class="herocontainer">
             <picture class="heropicture">
-                <source srcset="images/hero/heroImg-400px.jpg" media="(max-width: 32.4em)">
-                <source srcset="images/hero/heroImg-800px.jpg" media="(max-width: 900px)">
-                <img class="heroimg" src="images/hero/heroImg-1100px.jpg" alt="Franklin Image">
+                <source srcset="images/hero/fhhero400.jpg" media="(max-width: 32.4em)">
+                <source srcset="images/hero/fhhero550.jpg" media="(max-width: 900px)">
+                <img class="heroimg" src="images/hero/fhhero800.jpg" alt="Sign in Field">
             </picture>
             <section class="weathersummary">
                 <h3>Weather Summary</h3>
@@ -103,15 +103,16 @@
                 have your photos posted on one of our pages.
             </p>
         </section>
+        <div class="upcoming"></div>
         <section class="contact">
             <h3>Contact Information</h3>
             <img src="images/MapOfPreston.JPG" alt="Map of Preston">
             <ul class="contactlist">
                 <li><a>&#9742; 800-123-5555</a></li>
-                <li><a>&#128231; contactus@thesoggypotato.com</a></li>
+                <li><a>&#128231; contactus@thesoggypotato.com <br>
+                        &nbsp;&nbsp; 27 N State St <br>
+                        &nbsp;&nbsp; Preston, ID 83263</a></li>
             </ul>
-            <!--<a>&#9742;800-123-5555</a>
-        <a>&#128231;contactus@thesoggypotato.com</a>-->
         </section>
     </main>
     <footer>
@@ -123,6 +124,7 @@
         </a>
 
     </footer>
+    <script src="js/townEvents.js"></script>
     <script src="js/forecast.js"></script>
     <script src="js/weatherapi.js"></script>
     <script src="js/toggleBanner.js"></script>
