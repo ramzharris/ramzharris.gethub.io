@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Temple Inn & Suites - Reservations</title>
 
+    <link rel="stylesheet" href="css/reservation.css">
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <header>
         <img src="images/templogo.jpg" alt="Temple Inn & Suites Logo">
@@ -36,22 +39,57 @@
             <h3>Please fill out the form below and submit</h3>
         </div>
         <div>
-            <form action="thankyou.html" method="GET" id="reserve">
-                Location: <input list="locations" placeholder="Select One">
-                            <datalist id="locations">
-                                
-                            </datalist>
+            <form action="thankyou.html" method="GET" id="reserve" class="reserve">
+                <div class="location"></div>
+                <ul class="guests">
+                    <li>
+                        <label>Full Name*:</label>
+                        <input type="text" name="fullname" minlength="5" required>
+                    </li>
+                    <li>
+                        <label>Date*:</label>
+                        <input type="date" name="startstay" required>
+                    </li>
+                    <li>
+                        <label>to:</label>
+                        <input type="date" name="endstay">
+                    <li>
+                        <label>Room Type:</label>
+                        <input type="list" name="roomtype" placeholder="Select Room">
+                    </li>
+                    <li>
+                        <label>Number of Rooms:</label>
+                        <input type="number" name="qty" min="1" placeholder="1">
+                    </li>
+                    <li>
+                        <label>Phone Number*:</label>
+                        <input type="number" name="phone" min="10" required>
+                    </li>
+                    <li>
+                        <label>Email*:</label>
+                        <input type="text" name="email" placeholder="example@gmail.com" required>
+                    </li>
+                    <li>
+                        <label>State or Country:</label>
+                        <input type="text" name="home">
+                    </li>
+                    <li>
+                        <label>Special accomdations/comments</label>
+                        <textarea rows="5" cols="50" name="comments"></textarea>
+                    </li>
+                </ul>
             </form>
         </div>
     </main>
     <footer>
-        &copy; <span id="todaysYear"></span> All Rights Reserved - Temple Inn & Suites | 
+        &copy; <span id="todaysYear"></span> All Rights Reserved - Temple Inn & Suites |
         <span id="todaysDate"></span>
     </footer>
     <script src="js/datalists.js"></script>
     <script src="js/toggleMenu.js"></script>
     <script src="js/todaysDate.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webFontLoader.js"></script>
 </body>
+
 </html>
