@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temple Inn & Suites - home</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/templogo.jpg" alt="Temple Inn & Suites Logo">
+        <section class="headings">
+            <h1>
+                Temple Inn & Suites
+            </h1>
+            <div class="moto">The Temple is just across the street!</div>
+        </section>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="templepg.html">Temples</a></li>
+            <li><a href="reservation.html">Reservations</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="intro">
+            <picture class="introPic">
+                <source srcset="images/christus350.jpg" media="(max-width: 32.4em)">
+                <source srcset="images/christus550.jpg" media="(max-width: 64em)">
+                <img src="images/christus800.jpg" alt="Christus Statue">
+            </picture>
+            <section>
+                <h2>Welcome to the Temple Inn & Suites Homepage</h2>
+                <p>We are an owner-operated company that specializes in providing
+                    accomodations, and other needs, for temple workers, patrons, and
+                    their families.
+                </p>
+            </section>
+        </div>
+        <div class="locations">
+            <section class="locSection">
+                <p>With many locations all over, and always located near a temple,
+                    you will always find it easy to be close to the temple when traveling.
+                </p>
+            </section>
+            <div class="imgOne">
+                <img src="images/stltemple.jpg" alt="St. Louis, MO Temple">
+            </div>
+            <div class="imgTwo">
+                <img src="images/bctemple.jpg" alt="Brigham City, UT Temple">
+            </div>
+            <div class="imgThree">
+                <img src="images/laietemple.jpg" alt="Laie, HI Temple">
+            </div>
+            <div class="summary">
+                <img src="images/slctemple2.jpg" alt="Salt Lake City, UT Temple">
+                <p>The temple located near the headquarters of the Church of Jesus
+                    Christ of Latter-day Saints is a wonderful tourist attraction for
+                    all visitors. Dedicated in 1893, it is the sixth temple completed
+                    by the church.
+                </p>
+                <p>It has been announce that the church plans to close this temple on
+                    December 29, 2019 for renovations. These renovations are expected
+                    to take approximately four years to complete. Please make note of
+                    this closure if you have made plans to visit Salt Lake area.
+                </p>
+            </div>
+        </div>
+        <div class="servicesSV"><h3><a href="services.html">Services Available!</a></h3></div>
+        <div class="servicesAvailable">
+            <section>
+                <h3>Services Available</h3>
+                <h4><a href="services.html">See all services available</a></h4>
+                <section class="servItems">
+                    <p>Most locations offer the following and more!</p>
+                    <ul>
+                        <li>Breakfast</li>
+                        <li>Onsite Gym*</li>
+                        <li>Indoor Pool</li>
+                        <li>Wireless Internet (Wi-Fi)</li>
+                    </ul>
+                </section>
+                <p>*Some locations that do not have a gym, or recreational
+                    area have made arrangments for temporary passes to local
+                    gyms close by.
+                </p>
+            </section>
+        </div>
+        <div class="makeReservation">
+            <section>
+                <h3><a href="reservation.html">Make a reservation</a></h3>
+            </section>
+        </div>
+        <div class="contact">
+            <section>
+                <h3>Temple Inn & Suites</h3>
+                <p>4800 Montgomery LN #300</p>
+                <p>Bethesda, MD 20814</p>
+                <p>&#128231;customerrelations@TempleInnSuites.com</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        &copy; <span id="todaysYear"></span> All Rights Reserved - Temple Inn & Suites |
+        <span id="todaysDate"></span>
+    </footer>
+    <script src="js/toggleMenu.js"></script>
+    <script src="js/todaysDate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webFontLoader.js"></script>
+</body>
+
+</html>

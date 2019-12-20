@@ -1,0 +1,69 @@
+{
+    "town": [
+        {
+            "name": "Salt Lake",
+            "closure": "Closing for renovations starting Sunday, 29 December 2019.",
+            "street": "50 W North Temple St",
+            "city": "Salt Lake City, UT",
+            "zip": "84150-9709",
+            "phone": "(1) 801-240-2640"
+        },
+        {
+            "name": "Laie, Hawaii",
+            "closure": [
+                "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+                "Friday, 27 December 2019 (Limited Hours)",
+                "Saturday, 28 December 2019 (Limited Hours)",
+                "Monday, 30 December 2019 - Monday, 13 January 2020"
+            ],
+            "street": "55-600 Naniloa Loop",
+            "city": "Laie, HI",
+            "zip": "96762-2202",
+            "phone": "(1) 808-293-2427"
+        },
+        {
+            "name": "Brigham City, Utah",
+            "closure": [
+                "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+                "Tuesday, 31 December 2019 (Limited Hours)",
+                "Wednesday, 1 January 2020"
+            ],
+            "street": "250 S Main St",
+            "city": "Brigham City, UT",
+            "zip": "84302-2560",
+            "phone": "(1) 435-695-2170"
+        },
+        {
+            "name": "St. Louis, Missouri",
+            "closure": [
+                "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+                "Tuesday, 31 December 2019",
+                "Wednesday, 1 January 2020"
+            ],
+            "street": "12555 N Outer Forty Dr",
+            "city": "St. Louis, MO",
+            "zip": "63141-8620",
+            "phone": "(1) 314-515-1122"
+        },
+        {
+            "name": "San Antonio, Texas",
+            "closure": [
+                "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+                "Tuesday, 31 December 2019",
+                "Wednesday, 1 January 2020"
+            ],
+            "street": "20080 Stone Oak Pkwy",
+            "city": "San Antonio, TX",
+            "zip": "78258-6920",
+            "phone": "(1) 210-538-0034"
+        },
+        {
+            "name": "Washington D.C.",
+            "closure": "Temple Close during renovations.",
+            "street": "9900 Stoneybrook Dr",
+            "city": "Kensington, MD",
+            "zip": "20895-3199",
+            "phone": ""
+        }
+    ]
+}

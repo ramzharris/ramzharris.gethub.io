@@ -1,0 +1,264 @@
+/* Main Style Sheet for Temple Inn & Suites Site */
+body {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+header,
+footer {
+    margin: 0 auto;
+    padding: 0.15rem;
+    background-color: rgba(108, 13, 216, 0.445);
+    text-align: center;
+}
+
+header img {
+    height: auto;
+}
+
+.headings {
+    flex-direction: column;
+}
+
+.headings h1 {
+    margin: 0;
+    display: none;
+}
+
+.moto {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 750;
+}
+
+footer {
+    max-width: 950px;
+    font-weight: 750;
+    border-radius: 25px;
+}
+
+nav {
+    background-color: rgba(0, 255, 242, 0.507);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 950px;
+    overflow: hidden;
+}
+
+.navigation {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+    white-space: nowrap;
+}
+
+.navigation a {
+    display: block;
+    color: black;
+    font-weight: 650;
+    text-align: center;
+    text-decoration: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+.navigation a:hover {
+    background-color: rgb(0, 0, 116);
+    color: azure;
+}
+
+.intro {
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro section {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro h2, p {
+    margin: 0;
+}
+
+.locations {
+    background-color: rgba(108, 13, 216, 0.205);
+    border: 1px solid black;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.contact {
+    margin: auto 0;
+    text-align: center;
+}
+
+.contact h3 {
+    margin: 0;
+}
+
+.makeReservation {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.servicesAvailable {
+    display: none;
+}
+
+
+/* Style for medium - tablet view */
+@media only screen and (min-width: 32.5em) {
+    .headings h1 {
+        display: block;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav {
+        max-width: 950px;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 15px;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation a {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .locations {
+        background-color: rgba(108, 13, 216, 0.205);
+        border: 1px solid black;
+        max-width: 950px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        grid-template-areas: 
+            'TL TR'
+            'BL BR'
+            'sum sum';
+    }
+    .locSection {
+        grid-area: TL;
+        margin: 20px;
+        font-size: 1.5em;
+        font-style: oblique;
+    }
+    .imgOne {
+        grid-area: TR;
+        margin: 20px;
+    }
+    .imgOne img {
+        width: 100%;
+    }
+    .imgTwo {
+        grid-area: BL;
+        margin: 20px;
+    }
+    .imgTwo img {
+        width: 100%;
+    }
+    .imgThree {
+        grid-area: BR;
+        margin: 20px;
+    }
+    .imgThree img {
+        width: 100%;
+    }
+    .summary {
+        grid-area: sum;
+    }
+    .summary img {
+        margin: 20px;
+        float: left;
+    }
+    .summary p {
+        margin: 20px;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    .servicesSV {
+        display: none;
+    }
+
+    .servicesAvailable {
+        max-width: 900px;
+        margin: 0 auto;
+        margin-top: 20px;
+        border: 1px solid black;
+        box-shadow: 10px 10px 15px rgba(108, 13, 216, 0.205);
+        display: block;
+    }
+    
+    .servicesAvailable h3 {
+        text-align: center;
+        font-size: 2em;
+        margin: 0;
+    }
+    
+    .servicesAvailable h4 {
+        text-align: center;
+        margin: 0;
+    }
+    
+    .servItems {
+        margin-left: 5%;
+        font-family: "Courgette";
+    }
+    
+    .servItems p {
+        font-size: 1.2em;
+        font-weight: 700;
+        margin: 0;
+    }
+    
+    .servItems ul {
+        margin: 0;
+    }
+
+}
+
+/* Style for large - desktop view */
+@media only screen and (min-width: 65em) {}
