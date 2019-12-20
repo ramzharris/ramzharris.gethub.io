@@ -124,6 +124,10 @@ nav ul {
     text-align: center;
 }
 
+.servicesSV  h3 {
+    text-align: center;
+}
+
 .servicesAvailable {
     display: none;
 }
