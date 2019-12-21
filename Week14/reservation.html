@@ -55,8 +55,12 @@
                         <input type="date" name="endstay">
                     <li>
                         <label>Room Type:</label>
-                        <input type="list" name="roomtype" placeholder="Select Room">
-                        <datalist id="roomtype"></datalist>
+                        <input list="roomtype" name="roomtype" placeholder="Select Room">
+                        <datalist id="roomtype">
+                            <option value="King Room">King Room</option>
+                            <option value="Double Queen Room">Double Queen Room</option>
+                            <option value="Single Queen Room">Single Queen Room</option>
+                        </datalist>
                     </li>
                     <li>
                         <label>Number of Rooms:</label>
