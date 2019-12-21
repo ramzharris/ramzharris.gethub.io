@@ -3,7 +3,7 @@ const dataURL = 'https://ramzharris.github.io/ramzharris.gethub.io/Week14/js/tem
 fetch(dataURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject); // temporary code to test if json file loads
+        //console.log(jsObject); // temporary code to test if json file loads
         const town = jsObject['town'];
 
         var label = document.createElement('label');
@@ -30,4 +30,5 @@ fetch(dataURL)
         ul.appendChild(li);
         document.querySelector('div.location').appendChild(ul);
 
+        
     })

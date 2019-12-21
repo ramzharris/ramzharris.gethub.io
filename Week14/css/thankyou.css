@@ -1,0 +1,13 @@
+.thankyou {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Courgette';
+    background-color: rgba(108, 13, 216, 0.205);
+    max-width: 600px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.thankyou p {
+    padding-bottom: 10px;
+}

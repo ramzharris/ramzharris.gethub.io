@@ -6,7 +6,14 @@
             "street": "50 W North Temple St",
             "city": "Salt Lake City, UT",
             "zip": "84150-9709",
-            "phone": "(1) 801-240-2640"
+            "phone": "(1) 801-240-2640",
+            "services": [
+                "Clothing rental available",
+                "Cafeteria available",
+                "No patron housing available",
+                "Distribution center nearby"
+            ],
+            "photo": "slctemple2.jpg"
         },
         {
             "name": "Laie, Hawaii",
@@ -19,7 +26,14 @@
             "street": "55-600 Naniloa Loop",
             "city": "Laie, HI",
             "zip": "96762-2202",
-            "phone": "(1) 808-293-2427"
+            "phone": "(1) 808-293-2427",
+            "services": [
+                "Clothing rental available",
+                "Cafeteria available",
+                "No patron housing available",
+                "Distribution center nearby"
+            ],
+            "photo": "laietemple.jpg"
         },
         {
             "name": "Brigham City, Utah",
@@ -31,7 +45,14 @@
             "street": "250 S Main St",
             "city": "Brigham City, UT",
             "zip": "84302-2560",
-            "phone": "(1) 435-695-2170"
+            "phone": "(1) 435-695-2170",
+            "services": [
+                "No clothing rental available",
+                "No cafeteria available",
+                "No patron housing available",
+                "Distribution center nearby"
+            ],
+            "photo": "bctemple.jpg"
         },
         {
             "name": "St. Louis, Missouri",
@@ -43,7 +64,14 @@
             "street": "12555 N Outer Forty Dr",
             "city": "St. Louis, MO",
             "zip": "63141-8620",
-            "phone": "(1) 314-515-1122"
+            "phone": "(1) 314-515-1122",
+            "services": [
+                "Clothing rental available",
+                "No cafeteria available",
+                "No patron housing available",
+                "Distribution center nearby"
+            ],
+            "photo": "stltemple.jpg"
         },
         {
             "name": "San Antonio, Texas",
@@ -55,7 +83,9 @@
             "street": "20080 Stone Oak Pkwy",
             "city": "San Antonio, TX",
             "zip": "78258-6920",
-            "phone": "(1) 210-538-0034"
+            "phone": "(1) 210-538-0034",
+            "services": "",
+            "photo": ""
         },
         {
             "name": "Washington D.C.",
@@ -63,7 +93,9 @@
             "street": "9900 Stoneybrook Dr",
             "city": "Kensington, MD",
             "zip": "20895-3199",
-            "phone": ""
+            "phone": "",
+            "services": "",
+            "photo": ""
         }
     ]
 }
