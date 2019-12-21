@@ -53,7 +53,7 @@ nav ul {
     overflow: hidden;
 }
 
-.navigation {
+.navigation, .servUL {
     text-align: center;
     list-style: none;
     padding: 0;
@@ -63,12 +63,12 @@ nav ul {
     display: block;
 }
 
-.navigation li {
+.navigation li, .servUL li {
     display: none;
     white-space: nowrap;
 }
 
-.navigation a {
+.navigation a, .servUL a {
     display: block;
     color: black;
     font-weight: 600;
@@ -80,7 +80,7 @@ nav ul {
     display: block;
 }
 
-.navigation a:hover {
+.navigation a:hover, .servUL a:hover {
     background-color: rgb(0, 0, 116);
     color: azure;
 }
@@ -156,11 +156,11 @@ nav ul {
         border-radius: 15px;
     }
 
-    .navigation {
+    .navigation, .servUL {
         display: flex;
     }
 
-    .navigation li {
+    .navigation li, .servUL li {
         display: block;
         flex: 1 1 100%;
     }
@@ -169,7 +169,7 @@ nav ul {
         display: none;
     }
 
-    .navigation a {
+    .navigation a, .servUL a {
         padding-left: 5px;
         padding-right: 5px;
     }
@@ -236,7 +236,6 @@ nav ul {
         margin: 0 auto;
         margin-top: 20px;
         border: 1px solid black;
-        box-shadow: 10px 10px 15px rgba(108, 13, 216, 0.205);
         display: block;
     }
     
@@ -269,4 +268,25 @@ nav ul {
 }
 
 /* Style for large - desktop view */
-@media only screen and (min-width: 65em) {}
+@media only screen and (min-width: 65em) {
+    .servicesAvailable, footer {
+        box-shadow: 10px 10px 15px rgba(108, 13, 216, 0.205);
+    }
+
+    .intro img {
+        padding: 15px;
+        box-shadow: 15px 15px 25px rgba(108, 13, 216, 0.445);
+    }
+
+    .intro section {
+        margin-top: 15px;
+    }
+
+    .reserve {
+        box-shadow: 15px 15px 20px rgba(108, 13, 216, 0.445);
+    }
+
+    footer {
+        margin-top: 25px;
+    }
+}

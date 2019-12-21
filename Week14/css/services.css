@@ -1,0 +1,46 @@
+section h3 {
+    text-align: center;
+    font-family: 'Courgette';
+    font-size: 1.5em;
+}
+
+.servUL {
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+.amenities {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.amenities h3 {
+    margin: 0;
+}
+
+.amenities ul {
+    background-color: rgba(108, 13, 216, 0.205);
+    border-radius: 15px;
+}
+
+.amenities ul li {
+    padding: 10px;
+}
+
+.superSpecial {
+    background-color: rgba(108, 13, 216, 0.445);
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 15px;    
+}
+
+/* Style for large - desktop view */
+@media only screen and (min-width: 65em) {
+    .amenities ul {
+        box-shadow: 10px 10px 15px rgba(108, 13, 216, 0.205);
+    }
+
+    .superSpecial {
+        box-shadow: 15px 15px 20px rgba(108, 13, 216, 0.445);
+    }
+}

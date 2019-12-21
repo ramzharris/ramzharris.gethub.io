@@ -1,0 +1,34 @@
+.contactingUs {
+    background-color: rgba(108, 13, 216, 0.205);
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.contactingUs section {
+    padding: 10px;
+}
+
+.contactingUs h2, p {
+    text-align: center;
+}
+ iframe {
+     margin: 0 auto;
+     text-align: center;
+ }
+
+ .conForm li {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     padding: 5px;
+ }
+
+ .conForm > li > label {
+     flex: 1 0 120px;
+     max-width: 160px;
+ }
+ 
+ .conForm > li > label + * {
+     flex: 1 0 160;
+ }

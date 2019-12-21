@@ -1,0 +1,17 @@
+.templeInfo {
+    background-color: rgba(108, 13, 216, 0.205);
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 15px;
+    font-weight: 700;
+}
+
+.templeInfo section {
+    padding: 10px;
+}
+
+.templeInfo ul {
+    list-style-type: circle;
+    border: 1px solid black;
+    font-weight: 600;
+}

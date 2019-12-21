@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Temple Inn & Suites - Contact Us</title>
 
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <header>
         <img src="images/templogo.jpg" alt="Temple Inn & Suites Logo">
@@ -31,15 +34,48 @@
         </ul>
     </nav>
     <main>
-
+        <div class="contactingUs">
+            <section>
+                <h2>Our Contact Info:</h2>
+                <p>Address: 4800 Montgomery Ln #300</p>
+                <p>Bethesda, MD 20814</p>
+                <p>Phone: (1) 800-555-1234</p>
+                <p>Email: customerrelations@TempleInnSuites.com</p>
+                <p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.404837032964!2d-77.09772584863535!3d38.98325594938257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1576904834081!5m2!1sen!2sus"
+                        width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </p>
+                <form action="msgsent.html">
+                    <ul class="conForm">
+                        <li>
+                            <label>Name:</label>
+                            <input type="text" min="3">
+                        </li>
+                        <li>
+                            <label>Email:</label>
+                            <input type="text" placeholder="example@gmail.com">
+                        </li>
+                        <li>
+                            <label>Message:</label>
+                            <textarea name="msg" cols="30" rows="10"></textarea>
+                        </li>
+                        <li>
+                            <button type="submit">Submit</button>
+                        </li>
+                    </ul>
+                </form>
+            </section>
+        </div>
     </main>
     <footer>
-        &copy; <span id="todaysYear"></span> All Rights Reserved - Temple Inn & Suites | 
+        &copy; <span id="todaysYear"></span> All Rights Reserved - Temple Inn & Suites |
         <span id="todaysDate"></span>
     </footer>
     <script src="js/toggleMenu.js"></script>
     <script src="js/todaysDate.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webFontLoader.js"></script>
 </body>
+
 </html>
